@@ -10,4 +10,10 @@
   - name: config gws-onms
     routeros_command:
       commands:
-      - ip firewall address-list add address=klgsys-8-t.cybereason.net list=GOOGLE
+      - ip firewall address-list add address=klgsys-1-t.cybereason.net list=GOOGLE
+      - ip firewall address-list add address=klgsys-2-t.cybereason.net list=GOOGLE
+      - ip firewall address-list add address=klgsys-3-t.cybereason.net list=GOOGLE
+      - ip firewall address-list add address=klgsys-4-t.cybereason.net list=GOOGLE
+      - ip firewall address-list add address=klgsys-5-t.cybereason.net list=GOOGLE
+      - ip firewall address-list add address=klgsys-6-t.cybereason.net list=GOOGLE
+      - ip firewall address-list add address=klgsys-7-t.cybereason.net list=GOOGLE
