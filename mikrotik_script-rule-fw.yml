@@ -1,0 +1,13 @@
+---
+- hosts: AHI
+  connection: network_cli
+  gather_facts: no
+  tasks:
+  - name: config connection ssh with port 22822
+    set_fact:
+     ansible_port: 22822
+
+  - name: config gws-onms
+    routeros_command:
+      commands:
+      - ip firewall address-list add address=klgsys-8-t.cybereason.net list=GOOGLE
